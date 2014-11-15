@@ -1,6 +1,45 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+
+
+
+<script>
+  function change()
+        {
+             var d = new Date() ;
+            
+             var h = d.getSeconds();
+             
+             
+            
+              if (h%2==0) {
+                document.body.style.borderColor="navy";
+              }
+              else {
+                document.body.style.borderColor="orange";
+              }
+            setTimeout("change()", 1000);
+        }
+       window.onload=function(){
+           change();
+       }
+
+
+
+   
+
+
+
+
+
+
+
+</script>
+
+
+
+
 
   <title>story</title>
   
