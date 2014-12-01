@@ -1,497 +1,265 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
- 
-
- 
 
 <script>
-
   function change()
-
         {
-
              var d = new Date() ;
-
             
-
              var h = d.getSeconds();
-
              
-
              
-
             
-
               if (h%2==0) {
-
                 document.body.style.borderColor="navy";
-
               }
-
               else {
-
                 document.body.style.borderColor="orange";
-
               }
-
             setTimeout("change()", 1000);
-
         }
-
        window.onload=function(){
-
            change();
-
        }
 
- 
 
- 
-
- 
 
     
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
 
 </script>
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
 
   <title>introduce</title>
-
   
-
   <style>
-
     
-
  
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
 
     a{text-decoration:none; 
-
   color : black;}
 
- 
-
- 
 
     
 
- 
 
- 
 
- 
-
- 
 
 #picture{
-
   margin-bottom: 50px;
-
   width:80%;
-
 }
 
- 
-
- 
 
 #picture img{position: relative;
-
           top: 50px;
-
           width: 80%;
-
           max-width:200px;
 
- 
-
         }
-
- 
 
 #voice{
-
   margin-bottom: 50px;
-
   width:100%;
-
 }
 
- 
-
- 
 
 #voice img{position: relative;
-
           top: 50px;
-
           width: 100%;
-
           max-width:500px;
-
- 
 
         }
 
- 
-
- 
 
       
 
  
 
- 
-
- 
-
    
 
- 
 
- 
 
- 
-
- 
 
  @media screen and (max-width:640px){
-
                body {
-
                     font-family: 나눔고딕, arial, sans-serif;
-
                     color:black;
-
                     background-color: #fff;
-
                     margin: 30px;
-
                     padding:20px;
-
                     border:solid;
-
                     border-width:thick;
-
                     border-color: blue;
-
                     font-size:15px;
 
- 
-
                   }
-
                }
 
- 
 
- 
-
- 
 
             @media screen and (min-width:641px){
-
                body {
-
                     font-family: 나눔고딕, arial, sans-serif;
-
                     color:black;
-
                     background-color: #fff;
-
                     margin: 30px;
-
                     padding:20px;
-
                     border:solid;
-
                     border-width:15px;
-
                     border-color: blue;
-
                     font-size: 20px;
-
                   }
-
                 }
 
- 
-
- 
 
   #main {
-
             width: 450px;
-
         }
-
- 
 
             #main .icon {
-
                
-
             }
-
- 
 
                 #main .icon:nth-child(2n) {
-
                     animation-name: keyframes1;
-
                     animation-iteration-count: infinite;
-
                     transform-origin: 50% 10%;
-
                 }
-
- 
 
                 #main .icon:nth-child(2n-1) {
-
                     animation-name: keyframes2;
-
                     animation-iteration-count: infinite;
-
                     animation-direction: alternate;
-
                     transform-origin: 30% 5%;
-
                 }
 
- 
-
- 
 
         @keyframes keyframes1 {
-
             0% {
-
                 transform: rotate(-1deg);
-
                 animation-timing-function: ease-in;
-
             }
-
- 
 
             50% {
-
                 transform: rotate(1.5deg);
-
                 animation-timing-function: ease-out;
-
             }
-
         }
-
- 
 
         @keyframes keyframes2 {
-
             0% {
-
                 transform: rotate(1deg);
-
                 animation-timing-function: ease-in;
-
             }
-
- 
 
             50% {
-
                 transform: rotate(-1.5deg);
-
                 animation-timing-function: ease-out;
-
             }
-
         }
+        
 
- 
-
- 
-
+   @media print{
+               body {
+                    font-family: 나눔고딕, arial, sans-serif;
+                    color:black;
+                    background-color: #fff;
+                    margin: 30px;
+                    padding:20px;
+                    border:solid;
+                    border-width:15px;
+                    border-color: blue;
+                    font-size: 20px;
+                  }
+                   #story{ font-size: 40px;
+                           margin : auto;
+                        }
+                }
   </style>
 
- 
-
 </head>
-
   
-
 <body>
-
   <div>
-
   <a href="index.html"><h4>home</h4></a>
-
    <a href="story.html"><h4>story</h4></a>
-
     <a href="stillcut.html"><h4>still cut</h4></a>
-
   </div>
 
- 
-
- 
 
 <div id="background" width="900" height="900" align="center">
 
- 
-
         <div id="logo" width="400" height="100">
-
- 
 
                   
 
- 
-
    </div>   
-
             
 
- 
-
- 
 
 <div id="picture"   height="700" >
 
- 
-
- 
 
 <h3><em>Introduce</em></h3>
 
- 
-
 <div id="main">
 
- 
-
 <span><img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
   src="boo.jpg"  width="100" alt="no picture"></span>
 
- 
-
 <span><img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
   src="wajo.jpg"  width="100" alt="no picture"></span>
 
- 
-
 <span><img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
   src="suli.jpg"  width="100" alt="no picture"></span>
 
- 
-
 <span><img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
  src="rendar.png"  width="100" alt="no picture"></span> 
-
  
-
  </div>
 
- 
-
- 
 
 </div>
 
- 
 
- 
-
- 
 
         
 
- 
-
 <br><br><br>
 
- 
-
- 
 
          <div id="voice" width="400" height="700">
 
- 
-
           <h3><em>Voice Actor</em></h3>
-
   <img src="sound.jpg"  width="500" alt="no picture">
-
          </div>
 
- 
-
 </div>
-
   
-
  <script src="http://www.kirupa.com/prefixfree.min.js"></script>
 
- 
 
- 
 
- 
-
- 
 
 </body>
-
 </html>
 
- 

@@ -1,491 +1,261 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
- 
-
   <title>Monsters.Inc.</title>
-
     
-
 <script>
-
   function change()
-
         {
-
              var d = new Date() ;
-
             
-
              var h = d.getSeconds();
-
              
-
              
-
             
-
               if (h%2==0) {
-
                 document.body.style.borderColor="navy";
-
               }
-
               else {
-
                 document.body.style.borderColor="orange";
-
               }
-
             setTimeout("change()", 1000);
-
         }
-
        window.onload=function(){
-
            change();
-
        }
 
- 
 
- 
 
- 
-
- 
 
     alert(" Welcome to Monsters.Inc!.");
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
 
 </script>
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
 
     <style>
-
     
 
- 
-
 img{
-
   margin-bottom: 30px;
-
 }
 
- 
-
- 
 
 span {position:absolute;
-
   top:150px;
-
   right:653px;
-
 }
 
- 
 
- 
-
- 
 
 #picture{
-
   margin:auto;
-
   width:80%;
-
 }
 
- 
-
- 
 
 #picture img{position: relative;
-
           top: 50px;
-
           width: 80%;
-
           max-width:100px;
 
- 
-
         }
 
- 
-
- 
 
 #logo{
-
   margin:auto;
-
   width:100%;
-
 }
 
- 
-
- 
 
 #logo img{position: relative;
-
           
-
           width: 100%;
-
           max-width:400px;
-
- 
 
         }
 
- 
 
- 
 
- 
 
- 
-
- 
 
     a{text-decoration:none; 
-
   color : black;}
-
- 
 
   a:hover {color:blue;}
 
- 
-
   h2{
-
     position: relative;
-
     float : center;
-
   }
-
     
-
   h1{
-
     margin-top: -50px;
-
   }
 
- 
 
- 
-
- 
 
    #main {
-
             width: 450px;
-
         }
-
- 
 
             #main .icon {
-
             
-
             }
-
- 
 
                 #main .icon:nth-child(2n) {
-
                     animation-name: keyframes1;
-
                     animation-iteration-count: infinite;
-
                     transform-origin: 50% 10%;
-
                 }
-
- 
 
                 #main .icon:nth-child(2n-1) {
-
                     animation-name: keyframes2;
-
                     animation-iteration-count: infinite;
-
                     animation-direction: alternate;
-
                     transform-origin: 30% 5%;
-
                 }
 
- 
-
- 
 
         @keyframes keyframes1 {
-
             0% {
-
                 transform: rotate(-1deg);
-
                 animation-timing-function: ease-in;
-
             }
-
- 
 
             50% {
-
                 transform: rotate(1.5deg);
-
                 animation-timing-function: ease-out;
-
             }
-
         }
-
- 
 
         @keyframes keyframes2 {
-
             0% {
-
                 transform: rotate(1deg);
-
                 animation-timing-function: ease-in;
-
             }
-
- 
 
             50% {
-
                 transform: rotate(-1.5deg);
-
                 animation-timing-function: ease-out;
-
             }
-
         }
 
- 
-
- 
 
         
 
- 
-
  @media screen and (max-width:640px) {
-
                body {
-
                     font-family: 나눔고딕, arial, sans-serif;
-
                     color:black;
-
                     background-color: #fff;
-
                     margin: 30px;
-
                     padding:20px;
-
                     border:solid;
-
                     border-width:thick;
-
                     border-color: blue;
-
                     font-size:15px;
 
- 
-
                   }
-
                   #story{ font-size: 20px;
-
                           margin : auto;
-
                         }
-
                }
 
- 
 
- 
-
- 
 
             @media screen and (min-width:641px){
-
                body {
-
                     font-family: 나눔고딕, arial, sans-serif;
-
                     color:black;
-
                     background-color: #fff;
-
                     margin: 30px;
-
                     padding:20px;
-
                     border:solid;
-
                     border-width:15px;
-
                     border-color: blue;
-
                     font-size: 20px;
-
                   }
-
                    #story{ font-size: 40px;
-
                            margin : auto;
-
                         }
-
                 }
 
- 
-
- 
-
+                 @media print{
+               body {
+                    font-family: 나눔고딕, arial, sans-serif;
+                    color:black;
+                    background-color: #fff;
+                    margin: 30px;
+                    padding:20px;
+                    border:solid;
+                    border-width:15px;
+                    border-color: blue;
+                    font-size: 20px;
+                  }
+                   #story{ font-size: 40px;
+                           margin : auto;
+                        }
+                }
    
 
- 
 
- 
-
- 
 
   </style>
 
- 
-
 </head>
-
   
-
 <body>
 
- 
-
- 
 
 <div id="background" width="900" height="900" align="center">
 
- 
-
 <div id="main">
-
- 
 
         <div id="logo" width="400" height="100">
 
- 
-
             <img src="logo.jpg" alt="no picture" >
-
             <h1 id="story">" Welcome to <em>Monsters.Inc! </em>"</h1>
-
- 
 
         </div>
 
- 
 
- 
-
- 
 
          <div id="picture" width="400" height="700">
 
- 
 
- 
-
- 
 
         <img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
          src="mike.jpg" alt="no picture" width="100" > 
 
- 
-
- 
 
         <a href="introduce.html">
-
         <img  src="door.png" alt="no picture" width="250"></a> 
 
- 
-
       
-
         <img class="icon"  style="animation-delay: -.15s; animation-duration: .25s" 
-
         src="sulisuli.jpg" alt="no picture" width="200"> 
 
- 
 
- 
 
- 
-
- 
 
       
-
   </div>
-
          </div>
 
- 
-
 </div>
-
   <br><br><br><br><br><br><br><br><br>
-
  <script src="http://www.kirupa.com/prefixfree.min.js"></script>
-
 </body>
-
 </html>
